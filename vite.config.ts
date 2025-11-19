@@ -5,7 +5,18 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  
+  // DEV SERVER (local)
   server: {
     host: true,
+    port: 5173,
+  },
+
+  // PREVIEW SERVER (Coolify)
+  preview: {
+    host: "0.0.0.0",
+    port: 4173,
+    strictPort: true,
+    allowedHosts: ["ganadocontrol.ladaroke.com"],
   },
 });
