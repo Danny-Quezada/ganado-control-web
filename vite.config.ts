@@ -11,12 +11,4 @@ export default defineConfig({
     host: true,
     port: 5173,
   },
-
-  // PREVIEW SERVER (Coolify)
-  preview: {
-    host: "0.0.0.0",
-    port: 4173,
-    strictPort: true,
-    allowedHosts: ["ganadocontrol.ladaroke.com"],
-  },
 });
